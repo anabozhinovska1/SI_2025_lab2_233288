@@ -27,10 +27,15 @@ public class SILab2Test {
         RuntimeException ex3 = assertThrows(RuntimeException.class, () -> SILab2.checkCart(List.of(validItem), "123ABC"));
         assertEquals("Invalid card number!", ex3.getMessage());
 
-        // Valid scenario
+        // Valid scenario without discount
         Item okItem = new Item("banana", 1, 100, 0);
         double total = SILab2.checkCart(List.of(okItem), validCard);
         assertEquals(100, total);
+
+        // Valid scenario with discount
+        Item milk = new Item("milk", 2, 400, 0.25);
+        double totalMilk = SILab2.checkCart(List.of(milk), validCard);
+        assertEquals(570.0, totalMilk);
     }
 
     @Test
