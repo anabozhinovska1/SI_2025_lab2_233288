@@ -31,7 +31,7 @@
   Враќа: 570.0
 
   ## Multiple condition Testing
-  За if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10) вкупниот број на тест случаи е 2^3=8
+  За if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10) вкупниот број на тест случаи е 2^3=8, а минималниот е 4.
   
       A=false, B=false, C=false
       Item a = new Item("A", 5, 100, 0);
