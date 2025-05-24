@@ -1,13 +1,14 @@
 # SI_2025_lab2_233288
 # Ana Bozinovska 233288
+![CFD-233288](https://github.com/user-attachments/assets/b2234956-6047-46b6-b0fe-098ef3ec0e19)
 
-![CFD2](https://github.com/user-attachments/assets/aa7e0edb-3fac-4167-9db2-b002880db825)
+
 
 ## Цикломатска комлексност
 Број на ребра - број на јазли +2
-28-21+2=9
+33-26+2 = 9
 
-## За да се изврши Every Statment критериум потребно е минимум 4 тест случаи
+## За да се изврши Every Statment критериум потребно е минимум 5 тест случаи
 
   allItems = null
   cardNumber = "1234"	
@@ -24,6 +25,10 @@
   allItems = [Item("banana", 1, 100, 0)]
   cardNumber = "1111222233334444"	
   Враќа: 100.0
+
+  allItems = [Item("milk", 2, 400, 0.25)]
+  cardNumber = "1111222233334444"
+  Враќа: 570.0
 
   ## Multiple condition Testing
   За if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10) вкупниот број на тест случаи е 2^3=8
